@@ -7,12 +7,26 @@
 //
 
 #import "DBOAppDelegate.h"
+#import "DBOViewController.h"
 
 @implementation DBOAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    if (!self.window) {
+        self.window = [[UIWindow alloc] init];
+    }
+    
+    DBOViewController *rootVC = [[DBOViewController alloc] init];
+    
+    UINavigationController *mainNavigator =
+        [[UINavigationController alloc] initWithRootViewController:rootVC];
+    mainNavigator.navigationBar.translucent = NO;
+    
+    [self.window setRootViewController:mainNavigator];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 							

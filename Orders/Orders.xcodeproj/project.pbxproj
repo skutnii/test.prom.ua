@@ -13,7 +13,6 @@
 		2210E1DE18F6CD0E005B3C0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2210E1DC18F6CD0E005B3C0D /* InfoPlist.strings */; };
 		2210E1E018F6CD0E005B3C0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E1DF18F6CD0E005B3C0D /* main.m */; };
 		2210E1E418F6CD0E005B3C0D /* DBOAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E1E318F6CD0E005B3C0D /* DBOAppDelegate.m */; };
-		2210E1E718F6CD0E005B3C0D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2210E1E518F6CD0E005B3C0D /* Main.storyboard */; };
 		2210E1EA18F6CD0E005B3C0D /* DBOViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E1E918F6CD0E005B3C0D /* DBOViewController.m */; };
 		2210E1EC18F6CD0E005B3C0D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2210E1EB18F6CD0E005B3C0D /* Images.xcassets */; };
 		2210E1F318F6CD0E005B3C0D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E1F218F6CD0E005B3C0D /* XCTest.framework */; };
@@ -21,6 +20,29 @@
 		2210E1F518F6CD0E005B3C0D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E1D718F6CD0E005B3C0D /* UIKit.framework */; };
 		2210E1FD18F6CD0E005B3C0D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2210E1FB18F6CD0E005B3C0D /* InfoPlist.strings */; };
 		2210E1FF18F6CD0E005B3C0D /* OrdersTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E1FE18F6CD0E005B3C0D /* OrdersTests.m */; };
+		2210E20B18F6D0B8005B3C0D /* DBOViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */; };
+		2210E20E18F6D830005B3C0D /* DBODataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E20D18F6D830005B3C0D /* DBODataObject.m */; };
+		2210E23118F6D91D005B3C0D /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E21818F6D91D005B3C0D /* CXHTMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23218F6D91D005B3C0D /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E21A18F6D91D005B3C0D /* CXMLDocument.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23318F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E21C18F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23418F6D91D005B3C0D /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E21E18F6D91D005B3C0D /* CXMLElement.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23618F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E22218F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23718F6D91D005B3C0D /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E22418F6D91D005B3C0D /* CXMLNamespaceNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23818F6D91D005B3C0D /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E22618F6D91D005B3C0D /* CXMLNode.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23918F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E22818F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E22A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E23E18F6DE34005B3C0D /* DBOOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E23D18F6DE34005B3C0D /* DBOOrder.m */; };
+		2210E24118F6DE87005B3C0D /* DBOProduct.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24018F6DE87005B3C0D /* DBOProduct.m */; };
+		2210E24418F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24318F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m */; };
+		2210E24718F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24618F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m */; };
+		2210E24A18F6F482005B3C0D /* DBOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24918F6F482005B3C0D /* DBOException.m */; };
+		2210E24C18F6FC80005B3C0D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E24B18F6FC80005B3C0D /* libxml2.dylib */; };
+		2210E27F18F7009D005B3C0D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E27E18F7009D005B3C0D /* libc++.dylib */; };
+		2210E28118F700A7005B3C0D /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E28018F700A7005B3C0D /* libc.dylib */; };
+		2210E28318F700D5005B3C0D /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E28218F700D5005B3C0D /* libc++abi.dylib */; };
+		2210E28918F70396005B3C0D /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28618F70396005B3C0D /* CXMLDocument_CreationExtensions.m */; };
+		2210E28A18F70396005B3C0D /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		2210E28D18F703FA005B3C0D /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,7 +66,6 @@
 		2210E1E118F6CD0E005B3C0D /* Orders-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Orders-Prefix.pch"; sourceTree = "<group>"; };
 		2210E1E218F6CD0E005B3C0D /* DBOAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBOAppDelegate.h; sourceTree = "<group>"; };
 		2210E1E318F6CD0E005B3C0D /* DBOAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBOAppDelegate.m; sourceTree = "<group>"; };
-		2210E1E618F6CD0E005B3C0D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2210E1E818F6CD0E005B3C0D /* DBOViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBOViewController.h; sourceTree = "<group>"; };
 		2210E1E918F6CD0E005B3C0D /* DBOViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DBOViewController.m; sourceTree = "<group>"; };
 		2210E1EB18F6CD0E005B3C0D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -53,6 +74,48 @@
 		2210E1FA18F6CD0E005B3C0D /* OrdersTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrdersTests-Info.plist"; sourceTree = "<group>"; };
 		2210E1FC18F6CD0E005B3C0D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2210E1FE18F6CD0E005B3C0D /* OrdersTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrdersTests.m; sourceTree = "<group>"; };
+		2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBOViewController.xib; sourceTree = "<group>"; };
+		2210E20C18F6D830005B3C0D /* DBODataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBODataObject.h; sourceTree = "<group>"; };
+		2210E20D18F6D830005B3C0D /* DBODataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBODataObject.m; sourceTree = "<group>"; };
+		2210E21718F6D91D005B3C0D /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		2210E21818F6D91D005B3C0D /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		2210E21918F6D91D005B3C0D /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		2210E21A18F6D91D005B3C0D /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		2210E21B18F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		2210E21C18F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		2210E21D18F6D91D005B3C0D /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		2210E21E18F6D91D005B3C0D /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		2210E22118F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		2210E22218F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		2210E22318F6D91D005B3C0D /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		2210E22418F6D91D005B3C0D /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		2210E22518F6D91D005B3C0D /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		2210E22618F6D91D005B3C0D /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		2210E22718F6D91D005B3C0D /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		2210E22818F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		2210E22918F6D91D005B3C0D /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		2210E22A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		2210E22E18F6D91D005B3C0D /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		2210E23C18F6DE34005B3C0D /* DBOOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOOrder.h; sourceTree = "<group>"; };
+		2210E23D18F6DE34005B3C0D /* DBOOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOOrder.m; sourceTree = "<group>"; };
+		2210E23F18F6DE87005B3C0D /* DBOProduct.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOProduct.h; sourceTree = "<group>"; };
+		2210E24018F6DE87005B3C0D /* DBOProduct.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOProduct.m; sourceTree = "<group>"; };
+		2210E24218F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CXMLNode+DBOParseHelpers.h"; sourceTree = "<group>"; };
+		2210E24318F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CXMLNode+DBOParseHelpers.m"; sourceTree = "<group>"; };
+		2210E24518F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CXMLElement+DBOParseHelpers.h"; sourceTree = "<group>"; };
+		2210E24618F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CXMLElement+DBOParseHelpers.m"; sourceTree = "<group>"; };
+		2210E24818F6F482005B3C0D /* DBOException.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOException.h; sourceTree = "<group>"; };
+		2210E24918F6F482005B3C0D /* DBOException.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOException.m; sourceTree = "<group>"; };
+		2210E24B18F6FC80005B3C0D /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		2210E27E18F7009D005B3C0D /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		2210E28018F700A7005B3C0D /* libc.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libc.dylib; path = usr/lib/libc.dylib; sourceTree = SDKROOT; };
+		2210E28218F700D5005B3C0D /* libc++abi.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++abi.dylib"; path = "usr/lib/libc++abi.dylib"; sourceTree = SDKROOT; };
+		2210E28518F70396005B3C0D /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		2210E28618F70396005B3C0D /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		2210E28718F70396005B3C0D /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		2210E28B18F703FA005B3C0D /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +123,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2210E28318F700D5005B3C0D /* libc++abi.dylib in Frameworks */,
+				2210E28118F700A7005B3C0D /* libc.dylib in Frameworks */,
+				2210E27F18F7009D005B3C0D /* libc++.dylib in Frameworks */,
+				2210E24C18F6FC80005B3C0D /* libxml2.dylib in Frameworks */,
 				2210E1D618F6CD0E005B3C0D /* CoreGraphics.framework in Frameworks */,
 				2210E1D818F6CD0E005B3C0D /* UIKit.framework in Frameworks */,
 				2210E1D418F6CD0E005B3C0D /* Foundation.framework in Frameworks */,
@@ -101,6 +168,10 @@
 		2210E1D218F6CD0E005B3C0D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				2210E28218F700D5005B3C0D /* libc++abi.dylib */,
+				2210E28018F700A7005B3C0D /* libc.dylib */,
+				2210E27E18F7009D005B3C0D /* libc++.dylib */,
+				2210E24B18F6FC80005B3C0D /* libxml2.dylib */,
 				2210E1D318F6CD0E005B3C0D /* Foundation.framework */,
 				2210E1D518F6CD0E005B3C0D /* CoreGraphics.framework */,
 				2210E1D718F6CD0E005B3C0D /* UIKit.framework */,
@@ -112,13 +183,25 @@
 		2210E1D918F6CD0E005B3C0D /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				2210E20F18F6D91D005B3C0D /* Vendor */,
 				2210E1E218F6CD0E005B3C0D /* DBOAppDelegate.h */,
 				2210E1E318F6CD0E005B3C0D /* DBOAppDelegate.m */,
-				2210E1E518F6CD0E005B3C0D /* Main.storyboard */,
 				2210E1E818F6CD0E005B3C0D /* DBOViewController.h */,
 				2210E1E918F6CD0E005B3C0D /* DBOViewController.m */,
 				2210E1EB18F6CD0E005B3C0D /* Images.xcassets */,
 				2210E1DA18F6CD0E005B3C0D /* Supporting Files */,
+				2210E20C18F6D830005B3C0D /* DBODataObject.h */,
+				2210E20D18F6D830005B3C0D /* DBODataObject.m */,
+				2210E23C18F6DE34005B3C0D /* DBOOrder.h */,
+				2210E23D18F6DE34005B3C0D /* DBOOrder.m */,
+				2210E23F18F6DE87005B3C0D /* DBOProduct.h */,
+				2210E24018F6DE87005B3C0D /* DBOProduct.m */,
+				2210E24218F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.h */,
+				2210E24318F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m */,
+				2210E24518F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.h */,
+				2210E24618F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m */,
+				2210E24818F6F482005B3C0D /* DBOException.h */,
+				2210E24918F6F482005B3C0D /* DBOException.m */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -130,6 +213,7 @@
 				2210E1DC18F6CD0E005B3C0D /* InfoPlist.strings */,
 				2210E1DF18F6CD0E005B3C0D /* main.m */,
 				2210E1E118F6CD0E005B3C0D /* Orders-Prefix.pch */,
+				2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -150,6 +234,62 @@
 				2210E1FB18F6CD0E005B3C0D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		2210E20F18F6D91D005B3C0D /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				2210E21018F6D91D005B3C0D /* TouchXML */,
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		2210E21018F6D91D005B3C0D /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				2210E21118F6D91D005B3C0D /* Source */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		2210E21118F6D91D005B3C0D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				2210E28B18F703FA005B3C0D /* CXMLElement_CreationExtensions.h */,
+				2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */,
+				2210E28418F70396005B3C0D /* Creation */,
+				2210E21718F6D91D005B3C0D /* CXHTMLDocument.h */,
+				2210E21818F6D91D005B3C0D /* CXHTMLDocument.m */,
+				2210E21918F6D91D005B3C0D /* CXMLDocument.h */,
+				2210E21A18F6D91D005B3C0D /* CXMLDocument.m */,
+				2210E21B18F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.h */,
+				2210E21C18F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m */,
+				2210E21D18F6D91D005B3C0D /* CXMLElement.h */,
+				2210E21E18F6D91D005B3C0D /* CXMLElement.m */,
+				2210E22118F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.h */,
+				2210E22218F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m */,
+				2210E22318F6D91D005B3C0D /* CXMLNamespaceNode.h */,
+				2210E22418F6D91D005B3C0D /* CXMLNamespaceNode.m */,
+				2210E22518F6D91D005B3C0D /* CXMLNode.h */,
+				2210E22618F6D91D005B3C0D /* CXMLNode.m */,
+				2210E22718F6D91D005B3C0D /* CXMLNode_PrivateExtensions.h */,
+				2210E22818F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m */,
+				2210E22918F6D91D005B3C0D /* CXMLNode_XPathExtensions.h */,
+				2210E22A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m */,
+				2210E22E18F6D91D005B3C0D /* TouchXML.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		2210E28418F70396005B3C0D /* Creation */ = {
+			isa = PBXGroup;
+			children = (
+				2210E28518F70396005B3C0D /* CXMLDocument_CreationExtensions.h */,
+				2210E28618F70396005B3C0D /* CXMLDocument_CreationExtensions.m */,
+				2210E28718F70396005B3C0D /* CXMLNode_CreationExtensions.h */,
+				2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */,
+			);
+			path = Creation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,7 +371,7 @@
 			files = (
 				2210E1EC18F6CD0E005B3C0D /* Images.xcassets in Resources */,
 				2210E1DE18F6CD0E005B3C0D /* InfoPlist.strings in Resources */,
-				2210E1E718F6CD0E005B3C0D /* Main.storyboard in Resources */,
+				2210E20B18F6D0B8005B3C0D /* DBOViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,9 +390,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2210E23918F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m in Sources */,
+				2210E20E18F6D830005B3C0D /* DBODataObject.m in Sources */,
+				2210E23A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m in Sources */,
 				2210E1E418F6CD0E005B3C0D /* DBOAppDelegate.m in Sources */,
+				2210E23318F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m in Sources */,
+				2210E23E18F6DE34005B3C0D /* DBOOrder.m in Sources */,
+				2210E23618F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				2210E23218F6D91D005B3C0D /* CXMLDocument.m in Sources */,
+				2210E24A18F6F482005B3C0D /* DBOException.m in Sources */,
+				2210E23418F6D91D005B3C0D /* CXMLElement.m in Sources */,
 				2210E1EA18F6CD0E005B3C0D /* DBOViewController.m in Sources */,
+				2210E23718F6D91D005B3C0D /* CXMLNamespaceNode.m in Sources */,
+				2210E24118F6DE87005B3C0D /* DBOProduct.m in Sources */,
+				2210E24718F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m in Sources */,
+				2210E28A18F70396005B3C0D /* CXMLNode_CreationExtensions.m in Sources */,
+				2210E28D18F703FA005B3C0D /* CXMLElement_CreationExtensions.m in Sources */,
+				2210E23118F6D91D005B3C0D /* CXHTMLDocument.m in Sources */,
+				2210E24418F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m in Sources */,
 				2210E1E018F6CD0E005B3C0D /* main.m in Sources */,
+				2210E28918F70396005B3C0D /* CXMLDocument_CreationExtensions.m in Sources */,
+				2210E23818F6D91D005B3C0D /* CXMLNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,14 +439,6 @@
 				2210E1DD18F6CD0E005B3C0D /* en */,
 			);
 			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		2210E1E518F6CD0E005B3C0D /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				2210E1E618F6CD0E005B3C0D /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		2210E1FB18F6CD0E005B3C0D /* InfoPlist.strings */ = {
@@ -381,7 +531,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Orders/Orders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/include/libxml2/**",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+				);
 				INFOPLIST_FILE = "Orders/Orders-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -394,7 +550,13 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Orders/Orders-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"/usr/include/libxml2/**",
+					"/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/**",
+				);
 				INFOPLIST_FILE = "Orders/Orders-Info.plist";
+				OTHER_LDFLAGS = "-lxml2";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

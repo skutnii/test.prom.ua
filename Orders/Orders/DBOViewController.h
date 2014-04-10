@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DBOViewController : UIViewController
+@interface DBOViewController :
+    UIViewController<UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+
+@property(nonatomic, retain) IBOutlet UITableView *ordersView;
 
 @end
