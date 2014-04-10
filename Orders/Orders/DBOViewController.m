@@ -8,6 +8,7 @@
 
 #import "DBOViewController.h"
 #import "DBOOrder.h"
+#import "DBOOrderListCell.h"
 
 @interface DBOViewController ()
 
@@ -94,20 +95,24 @@
 -(UITableViewCell*)tableView:(UITableView *)tableView
                 cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Order"];
+    DBOOrderListCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Order"];
     if (!cell)
     {
-        cell = [[UITableViewCell alloc]
-                 initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"Order"];
+        cell = [DBOOrderListCell cell];
     }
     
     DBOOrder *order = [self.filteredOrders objectAtIndex:indexPath.row];
-    cell.textLabel.text = order.customerName;
+    cell.order = order;
     
     return cell;
 }
 
 #pragma mark UITableViewDelegate
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 68;
+}
 
 -(BOOL)tableView:(UITableView*)tableView shouldSelectRowAtIndexPath:(NSIndexPath*)iPath
 {
@@ -133,7 +138,7 @@
 -(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
 {
     searchBar.text = nil;
-    [self filterOrdersWithTerm:searchBar.text];
+    [self filterOrdersWithTerm:nil];
     [searchBar resignFirstResponder];
 }
 

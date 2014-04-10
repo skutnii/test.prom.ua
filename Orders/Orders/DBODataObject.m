@@ -18,8 +18,6 @@
     {
         NSString *idValue = [[XMLItem attributeForName:@"id"] stringValue];
         self.ID = [idValue intValue];
-        
-        self.price = [[XMLItem valueForFieldName:@"price"] floatValue];
     }
     
     return self;

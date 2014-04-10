@@ -43,6 +43,8 @@
 		2210E28918F70396005B3C0D /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28618F70396005B3C0D /* CXMLDocument_CreationExtensions.m */; };
 		2210E28A18F70396005B3C0D /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2210E28D18F703FA005B3C0D /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */; };
+		2210E28F18F71AD6005B3C0D /* DBOOrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */; };
+		2210E29218F71B18005B3C0D /* DBOOrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E29118F71B18005B3C0D /* DBOOrderListCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -116,6 +118,9 @@
 		2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
 		2210E28B18F703FA005B3C0D /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
 		2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBOOrderListCell.xib; sourceTree = "<group>"; };
+		2210E29018F71B18005B3C0D /* DBOOrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOOrderListCell.h; sourceTree = "<group>"; };
+		2210E29118F71B18005B3C0D /* DBOOrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOOrderListCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,6 +207,8 @@
 				2210E24618F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m */,
 				2210E24818F6F482005B3C0D /* DBOException.h */,
 				2210E24918F6F482005B3C0D /* DBOException.m */,
+				2210E29018F71B18005B3C0D /* DBOOrderListCell.h */,
+				2210E29118F71B18005B3C0D /* DBOOrderListCell.m */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -214,6 +221,7 @@
 				2210E1DF18F6CD0E005B3C0D /* main.m */,
 				2210E1E118F6CD0E005B3C0D /* Orders-Prefix.pch */,
 				2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */,
+				2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -369,6 +377,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2210E28F18F71AD6005B3C0D /* DBOOrderListCell.xib in Resources */,
 				2210E1EC18F6CD0E005B3C0D /* Images.xcassets in Resources */,
 				2210E1DE18F6CD0E005B3C0D /* InfoPlist.strings in Resources */,
 				2210E20B18F6D0B8005B3C0D /* DBOViewController.xib in Resources */,
@@ -390,6 +399,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2210E29218F71B18005B3C0D /* DBOOrderListCell.m in Sources */,
 				2210E23918F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m in Sources */,
 				2210E20E18F6D830005B3C0D /* DBODataObject.m in Sources */,
 				2210E23A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m in Sources */,

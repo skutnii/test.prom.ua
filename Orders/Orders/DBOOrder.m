@@ -40,7 +40,7 @@ static NSString * const kOrdersURL =
         
         NSDateFormatter *dateParser = [[NSDateFormatter alloc] init];
         [dateParser setDateFormat:@"dd.MM.yy HH:mm"];
-        self.createdAt = [dateParser dateFromString:[XMLItem valueForAttribute:@"date"]];
+        self.createdAt = [dateParser dateFromString:[XMLItem valueForFieldName:@"date"]];
         
         self.customerName = [XMLItem valueForFieldName:@"name"];
         self.company = [XMLItem valueForFieldName:@"company"];
@@ -53,6 +53,7 @@ static NSString * const kOrdersURL =
         self.deliveryCost = [[XMLItem valueForFieldName:@"deliveryCost"] floatValue];
         self.payerComment = [XMLItem valueForFieldName:@"payercomment"];
         self.salesComment = [XMLItem valueForFieldName:@"salescomment"];
+        self.price = [[XMLItem valueForFieldName:@"priceUAH"] floatValue];
         
         NSArray *prodItems = [XMLItem nodesForXPath:@"items/item" error:NULL];
         

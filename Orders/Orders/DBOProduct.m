@@ -27,6 +27,7 @@
         self.currency = [XMLItem valueForFieldName:@"currency"];
         self.imageLink = [XMLItem valueForFieldName:@"image"];
         self.productLink = [XMLItem valueForFieldName:@"url"];
+        self.price = [[XMLItem valueForFieldName:@"price"] floatValue];
     }
     
     return self;
@@ -34,7 +35,8 @@
 
 - (BOOL)match:(NSString *)term
 {
-    if ([self.name isEqualToString:term] || [self.sku isEqualToString:term]) return YES;
+    if ((NSNotFound != [self.name rangeOfString:term].location)
+        || [self.sku isEqualToString:term]) return YES;
     
     return [super match:term];
 }
