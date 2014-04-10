@@ -15,7 +15,7 @@
 {
     // Override point for customization after application launch.
     if (!self.window) {
-        self.window = [[UIWindow alloc] init];
+        self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     }
     
     DBOViewController *rootVC = [[DBOViewController alloc] init];

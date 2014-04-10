@@ -21,6 +21,16 @@
 @synthesize orders = _orders;
 @synthesize filteredOrders = _filteredOrders;
 @synthesize ordersView = _ordersView;
+@synthesize ordersFinder = _ordersFinder;
+
+-(void)setFilteredOrders:(NSArray *)filteredOrders
+{
+    if (filteredOrders != _filteredOrders)
+    {
+        _filteredOrders = filteredOrders;
+        [self.ordersView reloadData];
+    }
+}
 
 - (void)viewDidLoad
 {
@@ -42,8 +52,6 @@
         
         self.orders = orders;
         self.filteredOrders = orders;
-        
-        [self.ordersView reloadData];
     }];
 }
 
@@ -51,6 +59,24 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+-(void)filterOrdersWithTerm:(NSString*)term
+{
+    if (!term.length)
+    {
+        self.filteredOrders = [NSArray arrayWithArray:self.orders];
+        return;
+    }
+    
+    NSMutableArray *tmpOrders = [NSMutableArray arrayWithCapacity:self.orders.count];
+    for (DBOOrder *order in self.orders)
+    {
+        if ([order match:term])
+            [tmpOrders addObject:order];
+    }
+    
+    self.filteredOrders = [NSArray arrayWithArray:tmpOrders];
 }
 
 #pragma mark UITableViewDataSource
@@ -79,6 +105,42 @@
     cell.textLabel.text = order.customerName;
     
     return cell;
+}
+
+#pragma mark UITableViewDelegate
+
+-(BOOL)tableView:(UITableView*)tableView shouldSelectRowAtIndexPath:(NSIndexPath*)iPath
+{
+    return YES;
+}
+
+#pragma mark UISearchBarDelegate
+
+-(BOOL)searchBarShouldBeginEditing:(UISearchBar *)searchBar
+{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+    [searchBar setShowsCancelButton:YES animated:YES];
+    return YES;
+}
+
+-(BOOL)searchBarShouldEndEditing:(UISearchBar *)searchBar
+{
+    [self.navigationController setNavigationBarHidden:NO animated:YES];
+    [searchBar setShowsCancelButton:NO animated:YES];
+    return YES;
+}
+
+-(void)searchBarCancelButtonClicked:(UISearchBar *)searchBar
+{
+    searchBar.text = nil;
+    [self filterOrdersWithTerm:searchBar.text];
+    [searchBar resignFirstResponder];
+}
+
+- (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar
+{
+    [self filterOrdersWithTerm:searchBar.text];
+    [searchBar resignFirstResponder];
 }
 
 @end

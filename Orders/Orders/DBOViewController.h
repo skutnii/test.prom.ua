@@ -12,5 +12,6 @@
     UIViewController<UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
 
 @property(nonatomic, retain) IBOutlet UITableView *ordersView;
+@property(nonatomic, retain) IBOutlet UISearchBar *ordersFinder;
 
 @end

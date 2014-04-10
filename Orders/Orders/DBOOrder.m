@@ -71,7 +71,7 @@ static NSString * const kOrdersURL =
 -(BOOL)match:(NSString *)term
 {
     if ([term intValue] == self.ID) return YES;
-    if ([self.customerName isEqualToString:term]) return YES;
+    if (NSNotFound != [self.customerName rangeOfString:term].location) return YES;
     if ([self.phone isEqualToString:term]) return YES;
     
     for (DBOProduct *item in self.products)
