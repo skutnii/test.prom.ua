@@ -23,8 +23,9 @@
     if (order != _order)
     {
         _order = order;
-        [self layoutSubviews];
     }
+
+    [self layoutSubviews];
 }
 
 -(void)layoutSubviews

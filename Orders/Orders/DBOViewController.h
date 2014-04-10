@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBODetailsViewController.h"
 
 @interface DBOViewController :
-    UIViewController<UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate>
+    UIViewController<UISearchBarDelegate, UITableViewDataSource, UITableViewDelegate, DBODetailsDelegate>
 
 @property(nonatomic, retain) IBOutlet UITableView *ordersView;
 @property(nonatomic, retain) IBOutlet UISearchBar *ordersFinder;

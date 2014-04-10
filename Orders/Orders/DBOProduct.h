@@ -17,4 +17,6 @@
 @property(nonatomic, copy) NSString *imageLink;
 @property(nonatomic, copy) NSString *productLink;
 
+@property(nonatomic, strong) UIImage *icon;
+
 @end

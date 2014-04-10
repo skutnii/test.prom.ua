@@ -9,11 +9,13 @@
 #import "DBOViewController.h"
 #import "DBOOrder.h"
 #import "DBOOrderListCell.h"
+#import "DBOOrderTableOwner.h"
 
 @interface DBOViewController ()
 
 @property(nonatomic, retain) NSArray *orders;
 @property(nonatomic, retain) NSArray *filteredOrders;
+@property(nonatomic, assign) NSInteger currentSelection;
 
 @end
 
@@ -23,6 +25,7 @@
 @synthesize filteredOrders = _filteredOrders;
 @synthesize ordersView = _ordersView;
 @synthesize ordersFinder = _ordersFinder;
+@synthesize currentSelection = _currentSelection;
 
 -(void)setFilteredOrders:(NSArray *)filteredOrders
 {
@@ -114,9 +117,17 @@
     return 68;
 }
 
--(BOOL)tableView:(UITableView*)tableView shouldSelectRowAtIndexPath:(NSIndexPath*)iPath
+-(NSIndexPath*)tableView:(UITableView*)tableView willSelectRowAtIndexPath:(NSIndexPath*)iPath
 {
-    return YES;
+    self.currentSelection = iPath.row;
+    
+    DBODetailsViewController *detailsController = [DBODetailsViewController new];
+    detailsController.delegate = self;
+    [detailsController view];
+    detailsController.tableOwner.order = [self.filteredOrders objectAtIndex:iPath.row];
+    [self.navigationController pushViewController:detailsController animated:YES];
+    
+    return iPath;
 }
 
 #pragma mark UISearchBarDelegate
@@ -146,6 +157,32 @@
 {
     [self filterOrdersWithTerm:searchBar.text];
     [searchBar resignFirstResponder];
+}
+
+#pragma mark DBODetailsDelegate
+
+-(DBOOrder*)nextOrder
+{
+    NSInteger nextOrderIndex = self.currentSelection + 1;
+    if (nextOrderIndex < self.filteredOrders.count)
+    {
+        self.currentSelection = nextOrderIndex;
+        return [self.filteredOrders objectAtIndex:nextOrderIndex];
+    }
+    
+    return nil;
+}
+
+-(DBOOrder*)previousOrder
+{
+    NSInteger previousOrderIndex = self.currentSelection - 1;
+    if (previousOrderIndex >= 0)
+    {
+        self.currentSelection = previousOrderIndex;
+        return [self.filteredOrders objectAtIndex:previousOrderIndex];
+    }
+    
+    return nil;
 }
 
 @end

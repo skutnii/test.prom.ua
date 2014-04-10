@@ -98,9 +98,19 @@ static NSString * const kOrdersURL =
                  [DBOException raiseWithError:loadError];
              
              NSError *parseError = nil;
+#if 1
              CXMLDocument *xml = [[CXMLDocument alloc] initWithData:data options:0 error:&parseError];
              if (parseError)
                  [DBOException raiseWithError:parseError];
+#else
+             CXMLDocument *xml = [[CXMLDocument alloc]
+                                  initWithXMLString:@"<orders><order id=\"1\"></order><order id=\"2\"></order></orders>"
+                                  options:0
+                                  error:&parseError];
+             if (parseError)
+                 [DBOException raiseWithError:parseError];
+             
+#endif
              
              NSError *findError = nil;
              NSArray *orderNodes = [xml nodesForXPath:@"//order" error:&findError];

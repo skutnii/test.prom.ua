@@ -37,14 +37,20 @@
 		2210E24718F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24618F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m */; };
 		2210E24A18F6F482005B3C0D /* DBOException.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E24918F6F482005B3C0D /* DBOException.m */; };
 		2210E24C18F6FC80005B3C0D /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E24B18F6FC80005B3C0D /* libxml2.dylib */; };
-		2210E27F18F7009D005B3C0D /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E27E18F7009D005B3C0D /* libc++.dylib */; };
-		2210E28118F700A7005B3C0D /* libc.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E28018F700A7005B3C0D /* libc.dylib */; };
-		2210E28318F700D5005B3C0D /* libc++abi.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 2210E28218F700D5005B3C0D /* libc++abi.dylib */; };
 		2210E28918F70396005B3C0D /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28618F70396005B3C0D /* CXMLDocument_CreationExtensions.m */; };
 		2210E28A18F70396005B3C0D /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		2210E28D18F703FA005B3C0D /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E28C18F703FA005B3C0D /* CXMLElement_CreationExtensions.m */; };
 		2210E28F18F71AD6005B3C0D /* DBOOrderListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */; };
 		2210E29218F71B18005B3C0D /* DBOOrderListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E29118F71B18005B3C0D /* DBOOrderListCell.m */; };
+		2210E29618F72DA5005B3C0D /* DBODetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E29418F72DA5005B3C0D /* DBODetailsViewController.m */; };
+		2210E29718F72DA5005B3C0D /* DBODetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E29518F72DA5005B3C0D /* DBODetailsViewController.xib */; };
+		2210E29B18F730E2005B3C0D /* DBOOrderDetailsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E29A18F730E2005B3C0D /* DBOOrderDetailsCell.m */; };
+		2210E29E18F73125005B3C0D /* DBOProductInfoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E29D18F73125005B3C0D /* DBOProductInfoCell.m */; };
+		2210E2A118F73423005B3C0D /* UIImage+WebLoad.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E2A018F73423005B3C0D /* UIImage+WebLoad.m */; };
+		2210E2A318F73763005B3C0D /* DBOOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E2A218F73763005B3C0D /* DBOOrderDetailsCell.xib */; };
+		2210E2A518F7411A005B3C0D /* DBOProductInfoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2210E2A418F7411A005B3C0D /* DBOProductInfoCell.xib */; };
+		2210E2A818F74F17005B3C0D /* DBOOrderTableOwner.m in Sources */ = {isa = PBXBuildFile; fileRef = 2210E2A718F74F17005B3C0D /* DBOOrderTableOwner.m */; };
+		2210E2AA18F75ED5005B3C0D /* placeholder.png in Resources */ = {isa = PBXBuildFile; fileRef = 2210E2A918F75ED5005B3C0D /* placeholder.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +127,20 @@
 		2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBOOrderListCell.xib; sourceTree = "<group>"; };
 		2210E29018F71B18005B3C0D /* DBOOrderListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOOrderListCell.h; sourceTree = "<group>"; };
 		2210E29118F71B18005B3C0D /* DBOOrderListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOOrderListCell.m; sourceTree = "<group>"; };
+		2210E29318F72DA5005B3C0D /* DBODetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBODetailsViewController.h; sourceTree = "<group>"; };
+		2210E29418F72DA5005B3C0D /* DBODetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBODetailsViewController.m; sourceTree = "<group>"; };
+		2210E29518F72DA5005B3C0D /* DBODetailsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBODetailsViewController.xib; sourceTree = "<group>"; };
+		2210E29918F730E2005B3C0D /* DBOOrderDetailsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOOrderDetailsCell.h; sourceTree = "<group>"; };
+		2210E29A18F730E2005B3C0D /* DBOOrderDetailsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOOrderDetailsCell.m; sourceTree = "<group>"; };
+		2210E29C18F73125005B3C0D /* DBOProductInfoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOProductInfoCell.h; sourceTree = "<group>"; };
+		2210E29D18F73125005B3C0D /* DBOProductInfoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOProductInfoCell.m; sourceTree = "<group>"; };
+		2210E29F18F73423005B3C0D /* UIImage+WebLoad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+WebLoad.h"; sourceTree = "<group>"; };
+		2210E2A018F73423005B3C0D /* UIImage+WebLoad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+WebLoad.m"; sourceTree = "<group>"; };
+		2210E2A218F73763005B3C0D /* DBOOrderDetailsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBOOrderDetailsCell.xib; sourceTree = "<group>"; };
+		2210E2A418F7411A005B3C0D /* DBOProductInfoCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DBOProductInfoCell.xib; sourceTree = "<group>"; };
+		2210E2A618F74F17005B3C0D /* DBOOrderTableOwner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBOOrderTableOwner.h; sourceTree = "<group>"; };
+		2210E2A718F74F17005B3C0D /* DBOOrderTableOwner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBOOrderTableOwner.m; sourceTree = "<group>"; };
+		2210E2A918F75ED5005B3C0D /* placeholder.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = placeholder.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,9 +148,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2210E28318F700D5005B3C0D /* libc++abi.dylib in Frameworks */,
-				2210E28118F700A7005B3C0D /* libc.dylib in Frameworks */,
-				2210E27F18F7009D005B3C0D /* libc++.dylib in Frameworks */,
 				2210E24C18F6FC80005B3C0D /* libxml2.dylib in Frameworks */,
 				2210E1D618F6CD0E005B3C0D /* CoreGraphics.framework in Frameworks */,
 				2210E1D818F6CD0E005B3C0D /* UIKit.framework in Frameworks */,
@@ -188,7 +205,9 @@
 		2210E1D918F6CD0E005B3C0D /* Orders */ = {
 			isa = PBXGroup;
 			children = (
+				2210E2A918F75ED5005B3C0D /* placeholder.png */,
 				2210E20F18F6D91D005B3C0D /* Vendor */,
+				2210E29818F72DB0005B3C0D /* UI */,
 				2210E1E218F6CD0E005B3C0D /* DBOAppDelegate.h */,
 				2210E1E318F6CD0E005B3C0D /* DBOAppDelegate.m */,
 				2210E1E818F6CD0E005B3C0D /* DBOViewController.h */,
@@ -209,6 +228,16 @@
 				2210E24918F6F482005B3C0D /* DBOException.m */,
 				2210E29018F71B18005B3C0D /* DBOOrderListCell.h */,
 				2210E29118F71B18005B3C0D /* DBOOrderListCell.m */,
+				2210E29318F72DA5005B3C0D /* DBODetailsViewController.h */,
+				2210E29418F72DA5005B3C0D /* DBODetailsViewController.m */,
+				2210E29918F730E2005B3C0D /* DBOOrderDetailsCell.h */,
+				2210E29A18F730E2005B3C0D /* DBOOrderDetailsCell.m */,
+				2210E29C18F73125005B3C0D /* DBOProductInfoCell.h */,
+				2210E29D18F73125005B3C0D /* DBOProductInfoCell.m */,
+				2210E29F18F73423005B3C0D /* UIImage+WebLoad.h */,
+				2210E2A018F73423005B3C0D /* UIImage+WebLoad.m */,
+				2210E2A618F74F17005B3C0D /* DBOOrderTableOwner.h */,
+				2210E2A718F74F17005B3C0D /* DBOOrderTableOwner.m */,
 			);
 			path = Orders;
 			sourceTree = "<group>";
@@ -220,8 +249,6 @@
 				2210E1DC18F6CD0E005B3C0D /* InfoPlist.strings */,
 				2210E1DF18F6CD0E005B3C0D /* main.m */,
 				2210E1E118F6CD0E005B3C0D /* Orders-Prefix.pch */,
-				2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */,
-				2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -298,6 +325,18 @@
 				2210E28818F70396005B3C0D /* CXMLNode_CreationExtensions.m */,
 			);
 			path = Creation;
+			sourceTree = "<group>";
+		};
+		2210E29818F72DB0005B3C0D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				2210E29518F72DA5005B3C0D /* DBODetailsViewController.xib */,
+				2210E20A18F6D0B8005B3C0D /* DBOViewController.xib */,
+				2210E28E18F71AD6005B3C0D /* DBOOrderListCell.xib */,
+				2210E2A218F73763005B3C0D /* DBOOrderDetailsCell.xib */,
+				2210E2A418F7411A005B3C0D /* DBOProductInfoCell.xib */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -379,7 +418,11 @@
 			files = (
 				2210E28F18F71AD6005B3C0D /* DBOOrderListCell.xib in Resources */,
 				2210E1EC18F6CD0E005B3C0D /* Images.xcassets in Resources */,
+				2210E2A518F7411A005B3C0D /* DBOProductInfoCell.xib in Resources */,
 				2210E1DE18F6CD0E005B3C0D /* InfoPlist.strings in Resources */,
+				2210E2A318F73763005B3C0D /* DBOOrderDetailsCell.xib in Resources */,
+				2210E2AA18F75ED5005B3C0D /* placeholder.png in Resources */,
+				2210E29718F72DA5005B3C0D /* DBODetailsViewController.xib in Resources */,
 				2210E20B18F6D0B8005B3C0D /* DBOViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -403,11 +446,15 @@
 				2210E23918F6D91D005B3C0D /* CXMLNode_PrivateExtensions.m in Sources */,
 				2210E20E18F6D830005B3C0D /* DBODataObject.m in Sources */,
 				2210E23A18F6D91D005B3C0D /* CXMLNode_XPathExtensions.m in Sources */,
+				2210E29618F72DA5005B3C0D /* DBODetailsViewController.m in Sources */,
 				2210E1E418F6CD0E005B3C0D /* DBOAppDelegate.m in Sources */,
 				2210E23318F6D91D005B3C0D /* CXMLDocument_PrivateExtensions.m in Sources */,
+				2210E29B18F730E2005B3C0D /* DBOOrderDetailsCell.m in Sources */,
 				2210E23E18F6DE34005B3C0D /* DBOOrder.m in Sources */,
 				2210E23618F6D91D005B3C0D /* CXMLElement_ElementTreeExtensions.m in Sources */,
 				2210E23218F6D91D005B3C0D /* CXMLDocument.m in Sources */,
+				2210E29E18F73125005B3C0D /* DBOProductInfoCell.m in Sources */,
+				2210E2A118F73423005B3C0D /* UIImage+WebLoad.m in Sources */,
 				2210E24A18F6F482005B3C0D /* DBOException.m in Sources */,
 				2210E23418F6D91D005B3C0D /* CXMLElement.m in Sources */,
 				2210E1EA18F6CD0E005B3C0D /* DBOViewController.m in Sources */,
@@ -416,6 +463,7 @@
 				2210E24718F6EA52005B3C0D /* CXMLElement+DBOParseHelpers.m in Sources */,
 				2210E28A18F70396005B3C0D /* CXMLNode_CreationExtensions.m in Sources */,
 				2210E28D18F703FA005B3C0D /* CXMLElement_CreationExtensions.m in Sources */,
+				2210E2A818F74F17005B3C0D /* DBOOrderTableOwner.m in Sources */,
 				2210E23118F6D91D005B3C0D /* CXHTMLDocument.m in Sources */,
 				2210E24418F6DFA6005B3C0D /* CXMLNode+DBOParseHelpers.m in Sources */,
 				2210E1E018F6CD0E005B3C0D /* main.m in Sources */,

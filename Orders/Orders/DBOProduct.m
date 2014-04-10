@@ -16,6 +16,7 @@
 @synthesize currency = _currency;
 @synthesize imageLink = _imageLink;
 @synthesize productLink = _productLink;
+@synthesize icon = _icon;
 
 -(id)initWithXMLElement:(CXMLElement *)XMLItem
 {
