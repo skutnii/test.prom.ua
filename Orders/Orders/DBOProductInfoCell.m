@@ -32,9 +32,12 @@
 {
     self.nameLabel.text = self.product.name;
     self.priceLabel.text = [NSString stringWithFormat:@"%.2f %@ | x%g",
-                            self.product.price, self.product.currency, self.product.quantity];
+                            self.product.price,
+                            NSLocalizedString(self.product.currency, @""),
+                            self.product.quantity];
     self.totalLabel.text = [NSString stringWithFormat:@"%.2f %@",
-                            self.product.price * self.product.quantity, self.product.currency];
+                            self.product.price * self.product.quantity,
+                            NSLocalizedString(self.product.currency, @"")];
     
     UIImage *icon = self.product.icon;
     if (!icon)
